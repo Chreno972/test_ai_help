@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OTRA</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Logo here</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{% url 'authentication:register' %}">Register</a></li>
+          <li><a href="{% url 'authentication:login' %}">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {% block content %}
+        <div>
+            <p>Welcome to On The Road Academy, where tracking your daily learning and work hours by topic leads to increased productivity and success!</p>
+        </div>
+      {% endblock %}
+    </main>
+
+    <footer>
+      <p>© 2023 My website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
